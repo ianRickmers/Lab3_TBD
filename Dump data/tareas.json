@@ -1,0 +1,392 @@
+[
+    {
+        "_id": 0,
+        "nombre": "Sacar escombros",
+        "descrip": "Sacar escrombros de la zona cero del temblor",
+        "cant_vol_requeridos": 20,
+        "cant_vol_inscritos": 14,
+        "id_emergencia": {
+            "_id": 4,
+            "nombre": "Evacuación de personas (t)",
+            "descrip": "Evacuación de personas ante un tsunami",
+            "finicio": "1995-09-14",
+            "ffin": "2002-02-25",
+            "_id_institucion": {
+                "_id": 4,
+                "nombre": "27F",
+                "descrip": "Institución Humanitaria"
+            },
+            "geom": {
+                "type": "Point",
+                "crs": {
+                    "type": "name",
+                    "properties": {
+                        "name": "EPSG: 4326"
+                    }
+                },
+                "coordinates": [
+                    -70.691528,
+                    -33.185835
+                ]
+            },
+            "estado": 1
+        },
+        "finicio": "2006-03-24",
+        "ffin": "2011-05-25",
+        "id_estado": {
+            "_id": 0,
+            "descrip": "Requerida"
+        }
+    },
+    {
+        "_id": 1,
+        "nombre": "Limpiar barro",
+        "descrip": "Limpiar todo el barro despues de un aluvion",
+        "cant_vol_requeridos": 14,
+        "cant_vol_inscritos": 10,
+        "id_emergencia": {
+            "_id": 5,
+            "nombre": "Evacuación de personas (dt)",
+            "descrip": "Evacuación de personas ante un deslizamiento de tierra",
+            "finicio": "1994-03-30",
+            "ffin": "2001-02-18",
+            "_id_institucion": {
+                "_id": 4,
+                "nombre": "27F",
+                "descrip": "Institución Humanitaria"
+            },
+            "geom": {
+                "type": "Point",
+                "crs": {
+                    "type": "name",
+                    "properties": {
+                        "name": "EPSG: 4326"
+                    }
+                },
+                "coordinates": [
+                    -70.617371,
+                    -32.842674
+                ]
+            },
+            "estado": 0
+        },
+        "finicio": "2000-04-13",
+        "ffin": "2011-12-03",
+        "id_estado": {
+            "_id": 2,
+            "descrip": "Lista"
+        }
+    },
+    {
+        "_id": 2,
+        "nombre": "Trasladar personas",
+        "descrip": "Trasladar a un centro asistencial a personas con alguna lesion",
+        "cant_vol_requeridos": 22,
+        "cant_vol_inscritos": 20,
+        "id_emergencia": {
+            "_id": 5,
+            "nombre": "Evacuación de personas (dt)",
+            "descrip": "Evacuación de personas ante un deslizamiento de tierra",
+            "finicio": "1994-03-30",
+            "ffin": "2001-02-18",
+            "_id_institucion": {
+                "_id": 4,
+                "nombre": "27F",
+                "descrip": "Institución Humanitaria"
+            },
+            "geom": {
+                "type": "Point",
+                "crs": {
+                    "type": "name",
+                    "properties": {
+                        "name": "EPSG: 4326"
+                    }
+                },
+                "coordinates": [
+                    -70.617371,
+                    -32.842674
+                ]
+            },
+            "estado": 0
+        },
+        "finicio": "2000-10-20",
+        "ffin": "2014-12-25",
+        "id_estado": {
+            "_id": 1,
+            "descrip": "En proceso"
+        }
+    },
+    {
+        "_id": 3,
+        "nombre": "Buscar mascotas",
+        "descrip": "Buscar mascotas de las personas afectadas",
+        "cant_vol_requeridos": 23,
+        "cant_vol_inscritos": 10,
+        "id_emergencia": {
+            "_id": 1,
+            "nombre": "Ayuda a personas por lluvias",
+            "descrip": "Inundaciones en calles por alta caída de lluvia",
+            "finicio": "1997-11-01",
+            "ffin": "2017-10-11",
+            "_id_institucion": {
+                "_id": 3,
+                "nombre": "Héroes del bosque",
+                "descrip": "Brigada forestal voluntaria"
+            },
+            "geom": {
+                "type": "Point",
+                "crs": {
+                    "type": "name",
+                    "properties": {
+                        "name": "EPSG: 4326"
+                    }
+                },
+                "coordinates": [
+                    -70.710754,
+                    -34.186814
+                ]
+            },
+            "estado": 1
+        },
+        "finicio": "2001-10-13",
+        "ffin": "2012-09-12",
+        "id_estado": {
+            "_id": 1,
+            "descrip": "En proceso"
+        }
+    },
+    {
+        "_id": 4,
+        "nombre": "Buscar sobrevivientes",
+        "descrip": "Buscar personas despues de un desastre",
+        "cant_vol_requeridos": 40,
+        "cant_vol_inscritos": 5,
+        "id_emergencia": {
+            "_id": 2,
+            "nombre": "Incendio forestal",
+            "descrip": "Incendio forestal por altas temperaturas",
+            "finicio": "1992-03-30",
+            "ffin": "2018-04-06",
+            "_id_institucion": {
+                "_id": 3,
+                "nombre": "Héroes del bosque",
+                "descrip": "Brigada forestal voluntaria"
+            },
+            "geom": {
+                "type": "Point",
+                "crs": {
+                    "type": "name",
+                    "properties": {
+                        "name": "EPSG: 4326"
+                    }
+                },
+                "coordinates": [
+                    -71.584167,
+                    -33.068528
+                ]
+            },
+            "estado": 2
+        },
+        "finicio": "2003-08-17",
+        "ffin": "2010-11-07",
+        "id_estado": {
+            "_id": 2,
+            "descrip": "Lista"
+        }
+    },
+    {
+        "_id": 5,
+        "nombre": "Realizar cortafuego",
+        "descrip": "Realizar un cortafuego para un incendio cercano",
+        "cant_vol_requeridos": 12,
+        "cant_vol_inscritos": 10,
+        "id_emergencia": {
+            "_id": 4,
+            "nombre": "Evacuación de personas (t)",
+            "descrip": "Evacuación de personas ante un tsunami",
+            "finicio": "1995-09-14",
+            "ffin": "2002-02-25",
+            "_id_institucion": {
+                "_id": 4,
+                "nombre": "27F",
+                "descrip": "Institución Humanitaria"
+            },
+            "geom": {
+                "type": "Point",
+                "crs": {
+                    "type": "name",
+                    "properties": {
+                        "name": "EPSG: 4326"
+                    }
+                },
+                "coordinates": [
+                    -70.691528,
+                    -33.185835
+                ]
+            },
+            "estado": 1
+        },
+        "finicio": "2002-06-03",
+        "ffin": "2017-12-28",
+        "id_estado": {
+            "_id": 0,
+            "descrip": "Requerida"
+        }
+    },
+    {
+        "_id": 6,
+        "nombre": "Preparar comida",
+        "descrip": "Preparar comida para las personas afectadas y voluntarios",
+        "cant_vol_requeridos": 23,
+        "cant_vol_inscritos": 18,
+        "id_emergencia": {
+            "_id": 1,
+            "nombre": "Ayuda a personas por lluvias",
+            "descrip": "Inundaciones en calles por alta caída de lluvia",
+            "finicio": "1997-11-01",
+            "ffin": "2017-10-11",
+            "_id_institucion": {
+                "_id": 3,
+                "nombre": "Héroes del bosque",
+                "descrip": "Brigada forestal voluntaria"
+            },
+            "geom": {
+                "type": "Point",
+                "crs": {
+                    "type": "name",
+                    "properties": {
+                        "name": "EPSG: 4326"
+                    }
+                },
+                "coordinates": [
+                    -70.710754,
+                    -34.186814
+                ]
+            },
+            "estado": 1
+        },
+        "finicio": "2000-02-19",
+        "ffin": "2017-12-18",
+        "id_estado": {
+            "_id": 1,
+            "descrip": "En proceso"
+        }
+    },
+    {
+        "_id": 7,
+        "nombre": "Repartir agua",
+        "descrip": "Repartir agua para las personas afectadas y voluntarios",
+        "cant_vol_requeridos": 10,
+        "cant_vol_inscritos": 2,
+        "id_emergencia": {
+            "_id": 4,
+            "nombre": "Evacuación de personas (t)",
+            "descrip": "Evacuación de personas ante un tsunami",
+            "finicio": "1995-09-14",
+            "ffin": "2002-02-25",
+            "_id_institucion": {
+                "_id": 4,
+                "nombre": "27F",
+                "descrip": "Institución Humanitaria"
+            },
+            "geom": {
+                "type": "Point",
+                "crs": {
+                    "type": "name",
+                    "properties": {
+                        "name": "EPSG: 4326"
+                    }
+                },
+                "coordinates": [
+                    -70.691528,
+                    -33.185835
+                ]
+            },
+            "estado": 1
+        },
+        "finicio": "1999-10-17",
+        "ffin": "2022-12-16",
+        "id_estado": {
+            "_id": 2,
+            "descrip": "Lista"
+        }
+    },
+    {
+        "_id": 8,
+        "nombre": "Evacuar a las personas",
+        "descrip": "Evacuar a las personas por un posible desastre",
+        "cant_vol_requeridos": 17,
+        "cant_vol_inscritos": 10,
+        "id_emergencia": {
+            "_id": 4,
+            "nombre": "Evacuación de personas (t)",
+            "descrip": "Evacuación de personas ante un tsunami",
+            "finicio": "1995-09-14",
+            "ffin": "2002-02-25",
+            "_id_institucion": {
+                "_id": 4,
+                "nombre": "27F",
+                "descrip": "Institución Humanitaria"
+            },
+            "geom": {
+                "type": "Point",
+                "crs": {
+                    "type": "name",
+                    "properties": {
+                        "name": "EPSG: 4326"
+                    }
+                },
+                "coordinates": [
+                    -70.691528,
+                    -33.185835
+                ]
+            },
+            "estado": 1
+        },
+        "finicio": "1999-10-01",
+        "ffin": "2022-06-22",
+        "id_estado": {
+            "_id": 2,
+            "descrip": "Lista"
+        }
+    },
+    {
+        "_id": 9,
+        "nombre": "Entregar mantas",
+        "descrip": "Entregar mantas a personas afectadas por un desastre",
+        "cant_vol_requeridos": 8,
+        "cant_vol_inscritos": 3,
+        "id_emergencia": {
+            "_id": 0,
+            "nombre": "Incendio",
+            "descrip": "Incendio en casa particular del vecindario",
+            "finicio": "1992-10-21",
+            "ffin": "2013-10-26",
+            "_id_institucion": {
+                "_id": 3,
+                "nombre": "Héroes del bosque",
+                "descrip": "Brigada forestal voluntaria"
+            },
+            "geom": {
+                "type": "Point",
+                "crs": {
+                    "type": "name",
+                    "properties": {
+                        "name": "EPSG: 4326"
+                    }
+                },
+                "coordinates": [
+                    -70.581665,
+                    -33.632916
+                ]
+            },
+            "estado": 0
+        },
+        "finicio": "2001-11-19",
+        "ffin": "2015-09-08",
+        "id_estado": {
+            "_id": 2,
+            "descrip": "Lista"
+        }
+    }
+]

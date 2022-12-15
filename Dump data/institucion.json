@@ -1,0 +1,32 @@
+[
+    {
+        "_id": 0,
+        "nombre": "Fundacion Trabul",
+        "descrip": "Institución Social y Humanitaria"
+    },
+    {
+        "_id": 1,
+        "nombre": "Cruz Roja",
+        "descrip": "Institución Humanitaria"
+    },
+    {
+        "_id": 2,
+        "nombre": "Greenpeace",
+        "descrip": "Organización Ecologista"
+    },
+    {
+        "_id": 3,
+        "nombre": "Héroes del bosque",
+        "descrip": "Brigada forestal voluntaria"
+    },
+    {
+        "_id": 4,
+        "nombre": "27F",
+        "descrip": "Institución Humanitaria"
+    },
+    {
+        "_id": 5,
+        "nombre": "Fundación Hualo",
+        "descrip": "Institución Social y Humanitaria"
+    }
+]

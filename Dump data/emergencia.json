@@ -1,0 +1,158 @@
+[
+    {
+        "_id": 0,
+        "nombre": "Incendio",
+        "descrip": "Incendio en casa particular del vecindario",
+        "finicio": "1992-10-21",
+        "ffin": "2013-10-26",
+        "_id_institucion": {
+            "_id": 3,
+            "nombre": "Héroes del bosque",
+            "descrip": "Brigada forestal voluntaria"
+        },
+        "geom": {
+            "type": "Point",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "EPSG: 4326"
+                }
+            },
+            "coordinates": [
+                -70.581665,
+                -33.632916
+            ]
+        },
+        "estado": "Requerida"
+    },
+    {
+        "_id": 1,
+        "nombre": "Ayuda a personas por lluvias",
+        "descrip": "Inundaciones en calles por alta caída de lluvia",
+        "finicio": "1997-11-01",
+        "ffin": "2017-10-11",
+        "_id_institucion": {
+            "_id": 3,
+            "nombre": "Héroes del bosque",
+            "descrip": "Brigada forestal voluntaria"
+        },
+        "geom": {
+            "type": "Point",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "EPSG: 4326"
+                }
+            },
+            "coordinates": [
+                -70.710754,
+                -34.186814
+            ]
+        },
+        "estado": "En proceso"
+    },
+    {
+        "_id": 2,
+        "nombre": "Incendio forestal",
+        "descrip": "Incendio forestal por altas temperaturas",
+        "finicio": "1992-03-30",
+        "ffin": "2018-04-06",
+        "_id_institucion": {
+            "_id": 3,
+            "nombre": "Héroes del bosque",
+            "descrip": "Brigada forestal voluntaria"
+        },
+        "geom": {
+            "type": "Point",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "EPSG: 4326"
+                }
+            },
+            "coordinates": [
+                -71.584167,
+                -33.068528
+            ]
+        },
+        "estado": "Lista"
+    },
+    {
+        "_id": 3,
+        "nombre": "Persona atrapada",
+        "descrip": "Persona atarpada bajo escombros luego de un terremoto",
+        "finicio": "1999-04-18",
+        "ffin": "2003-03-28",
+        "_id_institucion": {
+            "_id": 0,
+            "nombre": "Fundacion Trabul",
+            "descrip": "Institución Social y Humanitaria"
+        },
+        "geom": {
+            "type": "Point",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "EPSG: 4326"
+                }
+            },
+            "coordinates": [
+                -71.246338,
+                -33.685496
+            ]
+        },
+        "estado": "Lista"
+    },
+    {
+        "_id": 4,
+        "nombre": "Evacuación de personas (t)",
+        "descrip": "Evacuación de personas ante un tsunami",
+        "finicio": "1995-09-14",
+        "ffin": "2002-02-25",
+        "_id_institucion": {
+            "_id": 4,
+            "nombre": "27F",
+            "descrip": "Institución Humanitaria"
+        },
+        "geom": {
+            "type": "Point",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "EPSG: 4326"
+                }
+            },
+            "coordinates": [
+                -70.691528,
+                -33.185835
+            ]
+        },
+        "estado": "En proceso"
+    },
+    {
+        "_id": 5,
+        "nombre": "Evacuación de personas (dt)",
+        "descrip": "Evacuación de personas ante un deslizamiento de tierra",
+        "finicio": "1994-03-30",
+        "ffin": "2001-02-18",
+        "_id_institucion": {
+            "_id": 4,
+            "nombre": "27F",
+            "descrip": "Institución Humanitaria"
+        },
+        "geom": {
+            "type": "Point",
+            "crs": {
+                "type": "name",
+                "properties": {
+                    "name": "EPSG: 4326"
+                }
+            },
+            "coordinates": [
+                -70.617371,
+                -32.842674
+            ]
+        },
+        "estado": "Requerida"
+    }
+]
