@@ -1,0 +1,14 @@
+[
+    {
+        "_id": 0,
+        "descrip": "Requerida"
+    },
+    {
+        "_id": 1,
+        "descrip": "En proceso"
+    },
+    {
+        "_id": 2,
+        "descrip": "Lista"
+    }
+]
