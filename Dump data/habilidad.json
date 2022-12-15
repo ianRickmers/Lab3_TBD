@@ -1,0 +1,50 @@
+[
+    {
+        "_id": 0,
+        "descrip": "Levantar escombros"
+    },
+    {
+        "_id": 1,
+        "descrip": "Organizar personas"
+    },
+    {
+        "_id": 2,
+        "descrip": "Utilizar maquinaria pesada"
+    },
+    {
+        "_id": 3,
+        "descrip": "Tener vehiculo"
+    },
+    {
+        "_id": 4,
+        "descrip": "Manejo de herramientas"
+    },
+    {
+        "_id": 5,
+        "descrip": "Saber conducir"
+    },
+    {
+        "_id": 6,
+        "descrip": "Saber primeros auxilios"
+    },
+    {
+        "_id": 7,
+        "descrip": "Manejo de niños"
+    },
+    {
+        "_id": 8,
+        "descrip": "Donar ropa"
+    },
+    {
+        "_id": 9,
+        "descrip": "Donar com_ida"
+    },
+    {
+        "_id": 10,
+        "descrip": "Tener alojamiento para compartir"
+    },
+    {
+        "_id": 11,
+        "descrip": "Conocimientos de rescatista"
+    }
+]
