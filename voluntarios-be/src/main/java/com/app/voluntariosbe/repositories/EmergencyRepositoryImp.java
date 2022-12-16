@@ -12,7 +12,7 @@ public class EmergencyRepositoryImp implements EmergencyRepository {
     @Override
     public ArrayList<Document> getAllEmergencies() {
         ArrayList<Document> emergencies = new ArrayList<Document>();
-        MongoClient mongoClient = MongoClients.create("mongodb://mongo:mongo@localhost:27017/voluntarios");
+        MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017/voluntarios");
         MongoDatabase database = mongoClient.getDatabase("voluntarios");
         MongoCollection<Document> collection = database.getCollection("emergencia");
         FindIterable<Document> iterable = collection.find();

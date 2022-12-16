@@ -19,14 +19,9 @@ public class DatabaseContext {
     @Value ("${spring.data.mongodb.host}")
     private String host;
 
-    @Value ("${spring.data.mongodb.username}")
-    private String username;
-
-    @Value ("${spring.data.mongodb.password}")
-    private String password;
 
     @Bean
     public MongoClient mongoClient() {
-        return MongoClients.create("mongodb://mongo:mongo@localhost:27017/voluntarios");
+        return MongoClients.create("mongodb://localhost:27017/voluntarios");
     }
 }
