@@ -5,7 +5,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.annotation.Id;
 
 @Document(collection = "voluntario")
-public class Volunteer {
+public class VolunteerMongo {
     @Id
     private Integer id;
     private String nombre;
@@ -15,7 +15,7 @@ public class Volunteer {
     private double latitud;
 
     //Constructor
-     public VolunteerMongo(Integer id, String nombre, Date fnacimiento, double longitud, double latitud) {
+    public VolunteerMongo(Integer id, String nombre, Date fnacimiento, double longitud, double latitud) {
         this.id = id;
         this.nombre = nombre;
         this.fnacimiento = fnacimiento;
