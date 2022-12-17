@@ -10,4 +10,8 @@ public interface EmergencyRepository {
 
     public ArrayList<Document> getAllEmergencies(Integer id);
 
+    public ArrayList<Document> getEmergencyLocations();
+
+    public Document getEmergencyLocationById(Integer id);
+
 }

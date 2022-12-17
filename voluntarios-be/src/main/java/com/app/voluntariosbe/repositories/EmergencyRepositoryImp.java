@@ -8,6 +8,10 @@ import org.springframework.stereotype.Repository;
 
 import com.mongodb.client.*;
 
+import static com.mongodb.client.model.Filters.eq;
+import static com.mongodb.client.model.Filters.and;
+import org.bson.conversions.Bson;
+
 @Repository
 public class EmergencyRepositoryImp implements EmergencyRepository {
     @Override
@@ -46,60 +50,30 @@ public class EmergencyRepositoryImp implements EmergencyRepository {
         }
         return emergencias;
     }
-}
 
-//Consulta 1 en mongo: Tener todas las tareas activas de una emergencia
-/*  
-db.emergencia.aggregate([
-  {
-    $lookup: {
-      from: "tarea",
-      let: { e: "$_id" },
-      pipeline: [
-        {
-          $match: {
-            $expr: {
-              $and: [
-                { $eq: ["$id_emergencia._id", "$$e"] },
-                {
-                  $or: [
-                    {
-                      $eq: [
-                        "$id_estado.descrip",
-                        "Requerida",
-                      ],
-                    },
-                    {
-                      $eq: [
-                        "$id_estado.descrip",
-                        "En proceso",
-                      ],
-                    },
-                  ],
-                },
-              ],
-            },
-          },
-        },
-        {
-          $project: {
-            estado: "$id_estado.descrip",
-            nombre: "$nombre",
-          },
-        },
-      ],
-      as: "tareasE",
-    },
-  },
-  {
-    $unwind: {
-      path: "$tareasE",
-    },
-  },
-  {
-    $match: {
-      _id: 1, // ID DE LA EMERGENCIA
-    },
-  },
-])
-*/
+    public ArrayList<Document> getEmergencyLocations() {
+        ArrayList<Document> emergencias = new ArrayList<Document>();
+        MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017/voluntarios");
+        MongoDatabase database = mongoClient.getDatabase("voluntarios");
+        MongoCollection<Document> collection = database.getCollection("emergencia");
+        Bson filter = new Document();
+        FindIterable<Document> result = collection.find(filter);
+        for (Document doc : result) {
+            emergencias.add(doc);
+        }
+        return emergencias;
+    }
+
+    public Document getEmergencyLocationById(Integer id) {
+        MongoClient mongoClient = MongoClients.create("mongodb://localhost:27017/voluntarios");
+        MongoDatabase database = mongoClient.getDatabase("voluntarios");
+        MongoCollection<Document> collection = database.getCollection("emergencia");
+        Bson filter = eq("_id", id);
+        Bson project = and(eq("_id", 0L), eq("coordenadas", "$geom.coordinates"));
+
+        FindIterable<Document> result = collection.find(filter)
+                .projection(project);
+        Document emergencia = result.first();
+        return emergencia;
+    }
+}

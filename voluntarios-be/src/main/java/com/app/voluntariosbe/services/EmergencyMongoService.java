@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.app.voluntariosbe.repositories.EmergencyRepository;
-import com.mongodb.client.AggregateIterable;
+
 
 
 @RestController
@@ -24,4 +24,10 @@ public class EmergencyMongoService {
     public ArrayList<Document> getAllEmergencies(@PathVariable("id") Integer id) {
         return emergencyRepository.getAllEmergencies(id);
     }
+
+    @GetMapping(value = "/locations")
+    public ArrayList<Document> getEmergencyLocations() {
+        return emergencyRepository.getEmergencyLocations();
+    }
+    
 }
