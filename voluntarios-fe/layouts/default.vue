@@ -116,6 +116,11 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Interactivo',
           to: '/interactive'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Cercano',
+          to: '/near'
         }
       ],
       miniVariant: false,
