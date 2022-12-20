@@ -1,0 +1,52 @@
+[
+  {
+    $lookup: {
+      from: "tarea",
+      let: { e: "$_id" },
+      pipeline: [
+        {
+          $match: {
+            $expr: {
+              $and: [
+                { $eq: ["$id_emergencia._id", "$$e"] },
+                {
+                  $or: [
+                    {
+                      $eq: [
+                        "$id_estado.descrip",
+                        "Requerida",
+                      ],
+                    },
+                    {
+                      $eq: [
+                        "$id_estado.descrip",
+                        "En proceso",
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          },
+        },
+        {
+          $project: {
+            estado: "$id_estado.descrip",
+            nombre: "$nombre",
+          },
+        },
+      ],
+      as: "tareasE",
+    },
+  },
+  {
+    $unwind: {
+      path: "$tareasE",
+    },
+  },
+  {
+    $match: {
+      _id: 1,
+    },
+  },
+]

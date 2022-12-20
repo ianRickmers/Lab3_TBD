@@ -77,3 +77,4 @@ public class EmergencyRepositoryImp implements EmergencyRepository {
         return emergencia;
     }
 }
+
